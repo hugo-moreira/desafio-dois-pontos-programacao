@@ -1,23 +1,21 @@
+# Desafio Valendo 2 Pontos na Nota Final
 
-/**
- * Realiza o login de um usuário com base no email e senha fornecidos.
- * 
- * A função busca no vetor de usuários um registro que corresponda ao email informado.
- * Se encontrado, verifica se a senha coincide e se a conta não está expirada.
- * 
- * @param {string} email - O endereço de email do usuário que está tentando logar.
- * @param {string} senha - A senha do usuário.
- * 
- * @returns {string} Retorna uma mensagem indicando o status do login:
- * - 'Login realizado com sucesso': Caso o email e senha estejam corretos e a conta não esteja expirada.
- * - 'Renove suas credenciais': Caso o usuário seja encontrado e a senha esteja correta, mas a propriedade 'expirado' seja true.
- * - 'Credenciais incorretas': Caso o email não seja encontrado ou a senha informada não corresponda ao email.
- * 
- * @example
- * fazerLogin('joao@exemplo.com', 'senha123'); // Retorna 'Login realizado com sucesso'
- * fazerLogin('maria@exemplo.com', 'senha456'); // Retorna 'Renove suas credenciais'
- * fazerLogin('email@inexistente.com', '123'); // Retorna 'Credenciais incorretas'
- */
-function fazerLogin(email, senha) {
-  // Implementação detalhada no arquivo src/login.js
-}
+## Pré-requisitos
+
+## Realiza o login de um usuário com base no email e senha fornecidos.
+
+- Vetor com as propriedades `id`, `nome`, `email`, `senha` e `expirado`: ok
+- Ao menos um usuario com `expirado: true` (Hugo Moreira): ok
+
+## Função `fazerLogin`
+
+- Retorna `'Login realizado com sucesso'` quando email e senha estão corretos e não está expirado: ok
+- Retorna `'Renove suas credenciais'` quando `expirado` for `true`: ok
+- Retorna `'Credenciais incorretas'` quando o email não existe ou a senha está errada: ok
+
+## 4 Testes
+
+- Teste 1 - Sucesso (`maria@teste.com` + senha correta): ok
+- Teste 2 - Credencial expirada (`hugo@teste.com` + senha correta, mas expirado): ok
+- Teste 3 - Usuario não encontrado (`naoexiste@teste.com`): ok
+- Teste 4 - Senha incorreta (`maria@teste.com` + senha errada): ok
