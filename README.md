@@ -3,7 +3,6 @@
 ## Pré-requisitos
 
 ## Realiza o login de um usuário com base no email e senha fornecidos.
-
 - Vetor com as propriedades `id`, `nome`, `email`, `senha` e `expirado`: ok
 - Ao menos um usuario com `expirado: true` (Hugo Moreira): ok
 
